@@ -1,13 +1,13 @@
-import express from 'express';
-import path from 'path';
-import favicon from 'serve-favicon';
-import logger from 'morgan';
-import cookieParser from 'cookie-parser';
-import bodyParser from 'body-parser';
-import cors from 'cors';
+const express = require('express');
+const path = require('path');
+const favicon = require('serve-favicon');
+const logger = require('morgan');
+const cookieParser = require('cookie-parser');
+const bodyParser = require('body-parser');
+const cors = require('cors');
 
-import routes from './routes/index';
-import users from './routes/users';
+const routes = require('./routes/index');
+const users = require('./routes/users');
 
 let app = express();
 
